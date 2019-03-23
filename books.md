@@ -6,15 +6,15 @@ description: >-
 
 # Books
 
-### Goal
+## Goal
 
 My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in total\).
 
-### Goodreads
+## Goodreads
 
-I use Goodreads to track all of the books that I read. Check out my profile [here](https://www.goodreads.com/user/show/70543748-paulina-khew). 
+I use Goodreads to track all of the books that I read. Check out my profile [here](https://www.goodreads.com/user/show/70543748-paulina-khew).
 
-### Books to Read
+## Books to Read
 
 * [ ] Do Androids Dream of Electric Sheep? - Philip K. Dick
 * [ ] The Hitchhiker's Guide to the Galaxy  - Douglas Adams
@@ -40,13 +40,19 @@ I use Goodreads to track all of the books that I read. Check out my profile [her
 * [ ] A Fine Balance - Rohitan Mistry
 * [ ] Thinking, Fast and Slow - Daniel Kahneman
 
-### Read This Year
+## Read This Year
 
 | Title | Author | Rating | Date Completed |
 | :--- | :--- | :--- | :--- |
 | Have a Little Faith | Mitch Albom | 5/5 | January 1 |
 | The Next Person You Meet in Heaven | Mitch Albom | 5/5 | January 1 |
 | The Kite Runner | Khaled Hosseini | 5/5 | January 10 |
-
-
+| I am the Messenger | Markus Zusak | 5/5 | January 14 |
+| The Diary of a Young Girl | Anne Frank | 4/5 | January 23 |
+| The Handmaid's Tale | Margaret Atwood | 5/5 | January 27 |
+| The Subtle Art of Not Giving a F\*ck | Mark Manson | 5/5 | February 5 |
+| Astrophysics for People in a Hurry | Neil deGrasse Tyson | 5/5 | February 28 |
+| The Thing Around Your Neck | Chimamanda Ngozi Adichie | 5/5 | March 19 |
+| After Dark | Haruki Murakami | 5/5 | March 20 |
+| After the Quake | Haruki Murakami | 5/5 | March 21 |
 
