@@ -12,7 +12,7 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 
 ### Goodreads
 
-I use Goodreads to track all of the books that I read. Check out my profile \[here\]\([https://www.goodreads.com/user/show/70543748-paulina-khew](https://www.goodreads.com/user/show/70543748-paulina-khew)\). 
+I use Goodreads to track all of the books that I read. Check out my profile [here](https://www.goodreads.com/user/show/70543748-paulina-khew). 
 
 ### Books to Read
 
