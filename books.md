@@ -1,10 +1,14 @@
 ---
 description: >-
-  My New Year's Resolution for 2019 is to read one book a week (aka. 52 books in
-  total).
+  This has a list of books to read as well as the books that I have read this
+  year.
 ---
 
 # Books
+
+### Goal
+
+My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in total\).
 
 ### Goodreads
 
