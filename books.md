@@ -45,17 +45,17 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 
 ## Books Read in 2019
 
-| Title | Author | Rating | Date Completed |
-| :--- | :--- | :--- | :--- |
-| Have a Little Faith | Mitch Albom | 5/5 | January 1 |
-| The Next Person You Meet in Heaven | Mitch Albom | 5/5 | January 1 |
-| The Kite Runner | Khaled Hosseini | 5/5 | January 10 |
-| I am the Messenger | Markus Zusak | 5/5 | January 14 |
-| The Diary of a Young Girl | Anne Frank | 4/5 | January 23 |
-| The Handmaid's Tale | Margaret Atwood | 5/5 | January 27 |
-| The Subtle Art of Not Giving a F\*ck | Mark Manson | 5/5 | February 5 |
-| Astrophysics for People in a Hurry | Neil deGrasse Tyson | 5/5 | February 28 |
-| The Thing Around Your Neck | Chimamanda Ngozi Adichie | 5/5 | March 19 |
-| After Dark | Haruki Murakami | 5/5 | March 20 |
-| After the Quake | Haruki Murakami | 5/5 | March 21 |
+| Title | Author | Date Completed |
+| :--- | :--- | :--- |
+| Have a Little Faith | Mitch Albom | January 1 |
+| The Next Person You Meet in Heaven | Mitch Albom | January 1 |
+| The Kite Runner | Khaled Hosseini | January 10 |
+| I am the Messenger | Markus Zusak | January 14 |
+| The Diary of a Young Girl | Anne Frank | January 23 |
+| The Handmaid's Tale | Margaret Atwood | January 27 |
+| The Subtle Art of Not Giving a F\*ck | Mark Manson | February 5 |
+| Astrophysics for People in a Hurry | Neil deGrasse Tyson | February 28 |
+| The Thing Around Your Neck | Chimamanda Ngozi Adichie | March 19 |
+| After Dark | Haruki Murakami | March 20 |
+| After the Quake | Haruki Murakami | March 21 |
 
