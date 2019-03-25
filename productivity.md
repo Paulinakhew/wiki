@@ -1,6 +1,10 @@
 # Productivity
 
-### Applications
+![](.gitbook/assets/productive.gif)
+
+## Bullet Journal
+
+## Applications
 
 
 
