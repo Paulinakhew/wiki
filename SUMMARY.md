@@ -8,6 +8,7 @@
   * [TED Talks](favourites/ted-talks.md)
   * [Quotes](favourites/quotes.md)
 * [Coding](coding/README.md)
+  * [Learn Coding](coding/learn-coding.md)
   * [C++](coding/c++.md)
   * [HTML / CSS](coding/html-css.md)
   * [Python](coding/python.md)
