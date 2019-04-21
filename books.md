@@ -58,4 +58,5 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 | The Thing Around Your Neck | Chimamanda Ngozi Adichie | March 19 |
 | After Dark | Haruki Murakami | March 20 |
 | After the Quake | Haruki Murakami | March 21 |
+| Blind Willow, Sleeping Woman | Haruki Murakami | April 14 |
 
