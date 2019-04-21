@@ -1,5 +1,7 @@
 # Learn Coding
 
+![](../.gitbook/assets/coding.gif)
+
 ### Learn by Practice
 
 Here is a list of my coding accounts on various websites that I use to train for coding interview questions. Go check them out!
