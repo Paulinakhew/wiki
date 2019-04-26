@@ -59,4 +59,5 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 | After Dark | Haruki Murakami | March 20 |
 | After the Quake | Haruki Murakami | March 21 |
 | Blind Willow, Sleeping Woman | Haruki Murakami | April 14 |
+| Le Petit Prince | Antoine de Saint-Exupéry | April 24 |
 
