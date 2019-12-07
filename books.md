@@ -62,4 +62,18 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 | Le Petit Prince | Antoine de Saint-Exupéry | April 24 |
 | Brave New World | Aldous Huxley | May 7 |
 | Othello | William Shakespeare | May 22 |
+| The Time Traveler's Wife | Audrey Niffenegger | May 30 |
+| The Power of Habit | Charles Duhigg | June 26 |
+| Kafka on the Shore | Haruki Murakami | July 5 |
+| The Magician's Nephew | C. S. Lewis | August 14 |
+| The Lion, the Witch and the Wardrobe | C. S. Lewis | August 15 |
+| The Horse and his Boy | C. S. Lewis | August 15 |
+| Prince Caspian | C. S. Lewis | August 16 |
+| The Voyage of the Dawn Treader | C. S. Lewis | August 18 |
+| The Silver Chair | C. S. Lewis | August 21 |
+| The Last Battle | C. S. Lewis | August 21 | 
+| The Elephant Vanishes | Haruki Murakami | September 10 | 
+| The Adventures of Sherlock Holmes | Sir Arthur Conan Doyle |
+| Shoe Dog | Phil Knight | November 13 | 
+| The Siren | Kiera Cass | November 30 |
 
