@@ -73,7 +73,7 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 | The Silver Chair | C. S. Lewis | August 21 |
 | The Last Battle | C. S. Lewis | August 21 | 
 | The Elephant Vanishes | Haruki Murakami | September 10 | 
-| The Adventures of Sherlock Holmes | Sir Arthur Conan Doyle |
+| The Adventures of Sherlock Holmes | Sir Arthur Conan Doyle | September 25 |
 | Shoe Dog | Phil Knight | November 13 | 
 | The Siren | Kiera Cass | November 30 |
 
