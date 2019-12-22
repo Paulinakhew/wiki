@@ -12,6 +12,12 @@ description: >-
 
 My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in total\). I use Goodreads to track all of the books that I read. Check out my profile and follow my progress [here](https://www.goodreads.com/user/show/70543748-paulina-khew).
 
+## All Time Favourite Books
+
+* **The Book Thief** - Markus Zusak
+* **The Boy in the Striped Pyjamas** - John Boyne
+
+
 ## Books to Read
 
 * [ ] **Do Androids Dream of Electric Sheep?** - Philip K. Dick
@@ -42,6 +48,10 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 * [ ] **Kafka on the Shore** - Haruki Murakami
 * [ ] **The Bullet Journal Method** - Ryder Carroll
 * [ ] **High Performance Habits** - Brendon Burchard
+* [ ] **1984** - George Orwell
+* [ ] **Fahrenheit 451** - Ray Bradbury
+* [ ] **The Testaments** - Margaret Atwood
+
 
 ## Books Read in 2019
 
