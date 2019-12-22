@@ -51,6 +51,7 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 * [ ] **1984** - George Orwell
 * [ ] **Fahrenheit 451** - Ray Bradbury
 * [ ] **The Testaments** - Margaret Atwood
+* [ ] **Enlightenment Now** - Steven Pinker
 
 
 ## Books Read in 2019
