@@ -24,7 +24,6 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 * [ ] **The Hitchhiker's Guide to the Galaxy**  - Douglas Adams
 * [ ] **New and Selected Poems Volume One** - Mary Oliver
 * [ ] **10% Happier** - Dan Harris
-* [ ] **Shoe Dog** - Phil Knight
 * [ ] **Sapiens** - Yuvan Noah Harari
 * [ ] **Flow** - Mihaly Csikszentmihalyi
 * [ ] **Man's Search for Meaning** - Viktor E. Frankl
