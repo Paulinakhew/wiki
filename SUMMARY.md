@@ -7,9 +7,11 @@
   * [TED Talks](favourites/ted-talks.md)
   * [Quotes](favourites/quotes.md)
 * [Coding](coding/README.md)
+  * [Hackathons](coding/hackathons.md)
+  * [Version Control](coding/version-control.md)
+  * [Coding Interviews](coding/coding-interviews/README.md)
+    * [Book: Cracking the Coding Interview](coding/coding-interviews/book-cracking-the-coding-interview.md)
   * [Kubernetes](coding/kubernetes/README.md)
     * [Learn Kubernetes Basics](coding/kubernetes/learn-kubernetes-basics.md)
-  * [Book: Cracking the Coding Interview](coding/book-cracking-the-coding-interview.md)
-  * [Learn Coding](coding/learn-coding.md)
   * [C++](coding/c++.md)
 
