@@ -1,6 +1,10 @@
+---
+description: 'Deployments, Kubectl'
+---
+
 # Deploy an App
 
-{% embed url="https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/" caption="Documentation / Tutorials / Learn Kubernetes Basics / Deploy an App" %}
+{% embed url="https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/" caption="Documentation / Tutorials / Learn Kubernetes Basics / Deploy an App" %}
 
 ## [Use kubectl to Create a Deployment](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/)
 
@@ -33,7 +37,7 @@
 
 
 
-## Interactive Tutorial - Deploying an App
+## [Interactive Tutorial - Deploying an App](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-interactive/)
 
 * a [Pod](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/#understanding-pods) is the basic execution unit of a Kubernetes application
 * each Pod is a part of a workload that is running on your cluster

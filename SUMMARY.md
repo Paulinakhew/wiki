@@ -15,5 +15,6 @@
     * [Learn Kubernetes Basics](coding/kubernetes/learn-kubernetes-basics/README.md)
       * [Create a Cluster](coding/kubernetes/learn-kubernetes-basics/create-a-cluster.md)
       * [Deploy an App](coding/kubernetes/learn-kubernetes-basics/deploy-an-app.md)
+      * [Explore Your App](coding/kubernetes/learn-kubernetes-basics/explore-your-app.md)
   * [C++](coding/c++.md)
 
