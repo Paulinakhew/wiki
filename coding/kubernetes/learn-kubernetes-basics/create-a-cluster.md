@@ -1,6 +1,8 @@
 # Create a Cluster
 
-## Using Minikube to Create a Cluster
+{% embed url="https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/" caption="Documentation / Tutorials / Learn Kubernetes Basics / Create a Cluster" %}
+
+## [Using Minikube to Create a Cluster](https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/)
 
 * **Kubernetes cluster:** a highly available cluster of computers that are connected to work as a single unit
 * you can deploy an application to a cluster without tying them to a specific machine
@@ -43,7 +45,7 @@
   * provides basic bootstrapping operations for working with your cluster
     * e.g. start, stop, status, delete
 
-## Interactive Tutorial: Creating a Cluster
+## [Interactive Tutorial: Creating a Cluster](https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-interactive/)
 
 ### Cluster up and running
 
