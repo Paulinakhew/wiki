@@ -12,6 +12,7 @@
   * [Coding Interviews](coding/coding-interviews/README.md)
     * [Book: Cracking the Coding Interview](coding/coding-interviews/book-cracking-the-coding-interview.md)
   * [Kubernetes](coding/kubernetes/README.md)
-    * [Learn Kubernetes Basics](coding/kubernetes/learn-kubernetes-basics.md)
+    * [Learn Kubernetes Basics](coding/kubernetes/learn-kubernetes-basics/README.md)
+      * [Create a Cluster](coding/kubernetes/learn-kubernetes-basics/create-a-cluster.md)
   * [C++](coding/c++.md)
 
