@@ -36,8 +36,26 @@ description: This has notes that I've created from the Kubernetes Basics documet
   * maintaining applications' desired state
   * scales applications
   * rolls out new updates
+* **A node is a virtual machine \(VM\) or a physical computer that serves as a worker machine in a Kubernetes cluster**
+  * each node has a **Kubelet,** an agent for managing the node and communicating with the Kubernetes master
+  * the node should have tools for handling container operations
+    * e.g. Docker or rkt
+  * a Kubernetes cluster that handles production traffic should have a minimum of three nodes
+
+> Masters manage the cluster and the nodes that are used to host the running applications.
+
+* when deploying apps to Kubernetes, you tell the master to start the application containers
+* the master schedules the containers to run on the cluster's nodes
+* **the nodes communicate with the master using the** [**Kubernetes API**](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)**,** which the master exposes
+* end users can use the Kubernetes API directly to interact with the cluster
 
 
 
+* a Kubernetes cluster can be deployed on either physical or virtual machines
+* you can use **Minikube** to start with Kubernetes development
 
+  * **Minikube:** a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing a single node
+    * available for Linux, macOS, Windows
+  * provides basic bootstrapping operations for working with your cluster
+    * e.g. start, stop, status, delete
 
