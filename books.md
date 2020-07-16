@@ -1,6 +1,7 @@
 ---
 description: >-
-  This has a list of books to read as well as the books that I have read in 2019.
+  This has a list of books to read as well as the books that I have read in
+  2019.
 ---
 
 # Books
@@ -15,7 +16,6 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 
 * **The Book Thief** - Markus Zusak
 * **The Boy in the Striped Pyjamas** - John Boyne
-
 
 ## Books to Read
 
@@ -51,7 +51,6 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 * [ ] **The Testaments** - Margaret Atwood
 * [ ] **Enlightenment Now** - Steven Pinker
 
-
 ## Books Read in 2019
 
 | Title | Author | Date Completed |
@@ -80,9 +79,9 @@ My New Year's Resolution for 2019 is to read one book a week \(aka. 52 books in 
 | Prince Caspian | C. S. Lewis | August 16 |
 | The Voyage of the Dawn Treader | C. S. Lewis | August 18 |
 | The Silver Chair | C. S. Lewis | August 21 |
-| The Last Battle | C. S. Lewis | August 21 | 
-| The Elephant Vanishes | Haruki Murakami | September 10 | 
+| The Last Battle | C. S. Lewis | August 21 |
+| The Elephant Vanishes | Haruki Murakami | September 10 |
 | The Adventures of Sherlock Holmes | Sir Arthur Conan Doyle | September 25 |
-| Shoe Dog | Phil Knight | November 13 | 
+| Shoe Dog | Phil Knight | November 13 |
 | The Siren | Kiera Cass | November 30 |
 
