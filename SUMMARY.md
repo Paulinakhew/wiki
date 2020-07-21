@@ -7,6 +7,8 @@
   * [TED Talks](favourites/ted-talks.md)
   * [Quotes](favourites/quotes.md)
 * [Coding](coding/README.md)
+  * [Helm](coding/helm/README.md)
+    * [An Introduction to Helm](coding/helm/an-introduction-to-helm.md)
   * [Hackathons](coding/hackathons.md)
   * [Version Control](coding/version-control.md)
   * [Coding Interviews](coding/coding-interviews/README.md)
