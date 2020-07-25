@@ -1,9 +1,13 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Books](books.md)
+* [Books](books/README.md)
+  * [Books to Read](books/books-to-read.md)
+  * [2019](books/2019.md)
+  * [2020](books/2020.md)
 * [Productivity](productivity.md)
 * [Favourites](favourites/README.md)
+  * [Books](favourites/books.md)
   * [TED Talks](favourites/ted-talks.md)
   * [Quotes](favourites/quotes.md)
 * [Coding](coding/README.md)
