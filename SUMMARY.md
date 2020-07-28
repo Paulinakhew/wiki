@@ -24,4 +24,6 @@
       * [Deploy an App](coding/kubernetes/learn-kubernetes-basics/deploy-an-app.md)
       * [Explore Your App](coding/kubernetes/learn-kubernetes-basics/explore-your-app.md)
   * [C++](coding/c++.md)
+* [Data Structures and Algorithms](data-structures-and-algorithms/README.md)
+  * [Arrays](data-structures-and-algorithms/arrays.md)
 
