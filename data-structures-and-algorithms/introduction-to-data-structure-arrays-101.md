@@ -1,8 +1,6 @@
----
-description: This is a learning module from LeetCode.
----
+# Arrays
 
-# Introduction to Data Structure: Arrays 101
+{% embed url="https://leetcode.com/explore/learn/card/fun-with-arrays/" caption="This LeetCode Explore Card will help you understand the basics of Arrays." %}
 
 ## [Introduction](https://leetcode.com/explore/featured/card/fun-with-arrays/521/introduction/)
 
@@ -11,7 +9,21 @@ description: This is a learning module from LeetCode.
 * **array:** a collection of items that are stored in neighbouring \(contiguous\) memory locations
   * since the items are stored together, checking through the entire collection of items is straightforward
 
+### Python Collections \(Arrays\)
+
+* there are four collection data types in the Python programming language:
+  * **list**: a collection which is ordered and changeable
+    * allows duplicate members
+  * **tuple:** a collection which is ordered and unchangeable
+    * allows duplicate members
+  * **set:** a collection which is unordered and unindexed
+    * no duplicate members
+  * **dictionary:** a collection which is unordered, changeable, and indexed
+    * no duplicate members
+
 #### Creating an Array
+
+> Note: I will be using a Python List for this page.
 
 ```text
 my_list = list()  # using the list() constructor  

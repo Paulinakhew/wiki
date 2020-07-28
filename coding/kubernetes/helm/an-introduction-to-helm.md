@@ -21,19 +21,19 @@
 
 #### An apt example
 
-![Installing maria using Ubuntu.](../../.gitbook/assets/screen-shot-2020-07-21-at-11.11.19-am.png)
+![Installing maria using Ubuntu.](../../../.gitbook/assets/screen-shot-2020-07-21-at-11.11.19-am.png)
 
 * this is a simple apt update
   * apt update knowledge about packages, install it, and it works
 
-![Installing postgres using Ubuntu](../../.gitbook/assets/screen-shot-2020-07-21-at-11.11.32-am.png)
+![Installing postgres using Ubuntu](../../../.gitbook/assets/screen-shot-2020-07-21-at-11.11.32-am.png)
 
 * Ubuntu doesn't know about postgres
 * you have to add knowledge, add certificates, get knowledge about the package from postgres, update, add repository, then install
 
 #### With Helm
 
-![Install mariadb using helm](../../.gitbook/assets/screen-shot-2020-07-21-at-11.13.50-am.png)
+![Install mariadb using helm](../../../.gitbook/assets/screen-shot-2020-07-21-at-11.13.50-am.png)
 
 * add bitnami chart repo and then install mariadb from bitnami chart repo
 
