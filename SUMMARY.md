@@ -25,5 +25,6 @@
       * [Explore Your App](coding/kubernetes/learn-kubernetes-basics/explore-your-app.md)
   * [C++](coding/c++.md)
 * [Data Structures and Algorithms](data-structures-and-algorithms/README.md)
-  * [Arrays](data-structures-and-algorithms/arrays.md)
+  * [Arrays](data-structures-and-algorithms/arrays/README.md)
+    * [Introduction to Data Structure: Arrays 101](data-structures-and-algorithms/arrays/introduction-to-data-structure-arrays-101.md)
 
