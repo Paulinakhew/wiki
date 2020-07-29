@@ -238,6 +238,8 @@ class Solution:
 
 #### Inserting at the End of the Array
 
+![Inserting an element at the end of an array.](../.gitbook/assets/image%20%286%29.png)
+
 * we can add an item to the end of the list using the `append()` method
 
 Example: using the `append()` method to append an item
@@ -247,4 +249,155 @@ thislist = ["apple", "banana", "cherry"]
 thislist.append("orange")
 print(thislist)  # outputs ["apple", "banana", "cherry", "orange"]
 ```
+
+#### Inserting at the Start of an Array
+
+* to insert an element at the start of an array, we'll need to shift the other elements in the array to the right by 1 to make space for the new element
+* the time taken for insertion at the beginning of the array is proportional to the length of the array
+  * this is linear time complexity: **O\(n\)**
+
+![Inserting an element at the front of the array.](../.gitbook/assets/image%20%285%29.png)
+
+* to add an item at a specified index, use the `insert()` method
+  * to add it to the front of the list, insert at position 0
+
+Example: using `insert()` to insert at the front of the list
+
+```text
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(0, "orange")
+print(thislist)  # outputs ["orange", "apple", "banana", "cherry"]
+```
+
+#### Inserting Anywhere in the Array
+
+* to insert at any given index, we first need to shift all the elements past that index one position to the right
+* once the space is created, we insert the new element
+  * inserting at the beginning is a special case of inserting an element at a given index - the given index is `0`
+
+![Inserting an element at a specific index.](../.gitbook/assets/image%20%287%29.png)
+
+* this is a costly operation since we could _potentially_ have to shift all of the elements to the right before inserting the new element
+* to add an item at a specified index, use the `insert()` method
+
+```text
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "orange")
+print(thislist)  # outputs ["apple", "orange", "banana", "cherry"] 
+```
+
+
+
+### Problem: Duplicate Zeros
+
+Given a fixed length array `arr` of integers, duplicate each occurrence of zero, shifting the remaining elements to the right.
+
+Note that elements beyond the length of the original array are not written.
+
+Do the above modifications to the input array **in place**, do not return anything from your function.
+
+**Example 1:**
+
+```text
+Input: [1,0,2,3,0,4,5,0]
+Output: null
+Explanation: After calling your function, the input array is modified to: [1,0,0,2,3,0,0,4]
+```
+
+**Example 2:**
+
+```text
+Input: [1,2,3]
+Output: null
+Explanation: After calling your function, the input array is modified to: [1,2,3]
+```
+
+**Note:**
+
+1. `1 <= arr.length <= 10000`
+2. `0 <= arr[i] <= 9`
+
+```text
+class Solution:
+    def duplicateZeros(self, arr: List[int]) -> None:
+        """
+        Do not return anything, modify arr in-place instead.
+        """
+        new_arr = []
+        for num in arr:
+            if num != 0:
+                new_arr.append(num)
+            else:
+                new_arr.append(0)
+                new_arr.append(0)
+        for i in range(len(arr)):
+            arr[i] = new_arr[i]
+```
+
+### 
+
+### Problem: Merge Sorted Array
+
+Given two sorted integer arrays _nums1_ and _nums2_, merge _nums2_ into _nums1_ as one sorted array.
+
+**Note:**
+
+* The number of elements initialized in _nums1_ and _nums2_ are _m_ and _n_ respectively.
+* You may assume that _nums1_ has enough space \(size that is **equal** to _m_ + _n_\) to hold additional elements from _nums2_.
+
+**Example:**
+
+```text
+Input:
+nums1 = [1,2,3,0,0,0], m = 3
+nums2 = [2,5,6],       n = 3
+
+Output: [1,2,2,3,5,6]
+```
+
+**Constraints:**
+
+* `-10^9 <= nums1[i], nums2[i] <= 10^9`
+* `nums1.length == m + n`
+* `nums2.length == n`
+
+```text
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        sort = []
+        i = 0
+        j = 0
+        while i < m and j < n:
+            if nums1[i] <= nums2[j]:
+                sort.append(nums1[i])
+                i += 1
+            else:
+                sort.append(nums2[j])
+                j += 1
+        if i < m:
+            while i < m:
+                sort.append(nums1[i])
+                i += 1
+        if j < n:
+            while j < n:
+                sort.append(nums2[j])
+                j += 1
+        for i in range(len(nums1)):
+            nums1[i] = sort[i]
+```
+
+```text
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        nums1[m:] = nums2
+        nums1.sort()
+```
+
+
 
