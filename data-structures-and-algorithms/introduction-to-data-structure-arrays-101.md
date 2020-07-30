@@ -238,7 +238,7 @@ class Solution:
 
 #### Inserting at the End of the Array
 
-![Inserting an element at the end of an array.](../.gitbook/assets/image%20%286%29.png)
+![Inserting an element at the end of an array.](../.gitbook/assets/image%20%288%29.png)
 
 * we can add an item to the end of the list using the `append()` method
 
@@ -256,7 +256,7 @@ print(thislist)  # outputs ["apple", "banana", "cherry", "orange"]
 * the time taken for insertion at the beginning of the array is proportional to the length of the array
   * this is linear time complexity: **O\(n\)**
 
-![Inserting an element at the front of the array.](../.gitbook/assets/image%20%285%29.png)
+![Inserting an element at the front of the array.](../.gitbook/assets/image%20%287%29.png)
 
 * to add an item at a specified index, use the `insert()` method
   * to add it to the front of the list, insert at position 0
@@ -275,7 +275,7 @@ print(thislist)  # outputs ["orange", "apple", "banana", "cherry"]
 * once the space is created, we insert the new element
   * inserting at the beginning is a special case of inserting an element at a given index - the given index is `0`
 
-![Inserting an element at a specific index.](../.gitbook/assets/image%20%287%29.png)
+![Inserting an element at a specific index.](../.gitbook/assets/image%20%289%29.png)
 
 * this is a costly operation since we could _potentially_ have to shift all of the elements to the right before inserting the new element
 * to add an item at a specified index, use the `insert()` method
@@ -397,6 +397,184 @@ class Solution:
         """
         nums1[m:] = nums2
         nums1.sort()
+```
+
+## Deleting Items From an Array
+
+### Array Deletions
+
+* deleting in an array has the same three different cases:
+  * deleting the last element
+  * deleting the first element
+  * deleting at any given index
+
+#### Deleting From the End of an Array
+
+* the least time consuming of the three cases
+
+![Deleting an element from the end of the array.](../.gitbook/assets/image%20%2810%29.png)
+
+* to remove an item from the end of the list, use the `pop()` method
+
+```text
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)  # outputs ["apple", "banana"]
+```
+
+#### Deleting From the Start of an Array
+
+* deleting from the front of the array is the costliest operation
+  * it will create a vacant spot at the `0th` index and all of the other elements will have to shift one element to the left
+* shifting all elements will take **O\(n\)** time, where **n** is the number of elements in the array
+
+![Deleting an element from the start of an array.](../.gitbook/assets/image%20%286%29.png)
+
+* to remove an element from the front of the list, use the `pop()` method and pass in `0` as the index
+
+```text
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(0)
+print(thislist)  # outputs ["banana", "cherry"]
+```
+
+* alternatively, you can use the `del` keyword to remove the specified index
+
+```text
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)  # outputs ["banana", "cherry"]
+```
+
+#### Deleting From Anywhere in the Array
+
+* to delete at any given index, the empty space created by the deleted item will have to be filled
+  * each of the elements to the right of the index we are deleting at will get shifted to the left by 1
+* deleting the first element of an array is a special case of deletion at a given index, where the index is `0`
+* the shift of elements takes **O\(k\)** time where **k** is the number of elements to the right of the given index
+  * since potentially _**k = n**_, we say the time complexity of this operation is also **O\(n\)**
+
+![Deleting an element from any index in the array.](../.gitbook/assets/image%20%285%29.png)
+
+Example: deleting the second element in the array using the `pop()` method
+
+```text
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)  # outputs ["apple", "cherry"]
+```
+
+### Problem: Remove Element
+
+Given an array _nums_ and a value _val_, remove all instances of that value [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) and return the new length.
+
+Do not allocate extra space for another array, you must do this by **modifying the input array** [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) with O\(1\) extra memory.
+
+The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+
+**Example 1:**
+
+```text
+Given nums = [3,2,2,3], val = 3,
+
+Your function should return length = 2, with the first two elements of nums being 2.
+
+It doesn't matter what you leave beyond the returned length.
+```
+
+**Example 2:**
+
+```text
+Given nums = [0,1,2,2,3,0,4,2], val = 2,
+
+Your function should return length = 5, with the first five elements of nums containing 0, 1, 3, 0, and 4.
+
+Note that the order of those five elements can be arbitrary.
+
+It doesn't matter what values are set beyond the returned length.
+```
+
+**Clarification:**
+
+Confused why the returned value is an integer but your answer is an array?
+
+Note that the input array is passed in by **reference**, which means modification to the input array will be known to the caller as well.
+
+Internally you can think of this:
+
+```text
+// nums is passed in by reference. (i.e., without making a copy)
+int len = removeElement(nums, val);
+
+// any modification to nums in your function would be known by the caller.
+// using the length returned by your function, it prints the first len elements.
+for (int i = 0; i < len; i++) {
+    print(nums[i]);
+}
+```
+
+```text
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        while val in nums:
+            nums.pop(nums.index(val))
+```
+
+
+
+### Problem: Remove Duplicates from Sorted Array
+
+Given a sorted array _nums_, remove the duplicates [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) such that each element appear only _once_ and return the new length.
+
+Do not allocate extra space for another array, you must do this by **modifying the input array** [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) with O\(1\) extra memory.
+
+**Example 1:**
+
+```text
+Given nums = [1,1,2],
+
+Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
+
+It doesn't matter what you leave beyond the returned length.
+```
+
+**Example 2:**
+
+```text
+Given nums = [0,0,1,1,1,2,2,3,3,4],
+
+Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.
+
+It doesn't matter what values are set beyond the returned length.
+```
+
+**Clarification:**
+
+Confused why the returned value is an integer but your answer is an array?
+
+Note that the input array is passed in by **reference**, which means modification to the input array will be known to the caller as well.
+
+Internally you can think of this:
+
+```text
+// nums is passed in by reference. (i.e., without making a copy)
+int len = removeDuplicates(nums);
+
+// any modification to nums in your function would be known by the caller.
+// using the length returned by your function, it prints the first len elements.
+for (int i = 0; i < len; i++) {
+    print(nums[i]);
+}
+```
+
+```text
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        i = 0
+        while i < len(nums) - 1:
+            while nums[i+1] == nums[i]:
+                nums.pop(nums.index(nums[i]))
+            i += 1
 ```
 
 
