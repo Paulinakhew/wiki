@@ -31,4 +31,5 @@
 * [ ] **Fahrenheit 451** - Ray Bradbury
 * [ ] **The Testaments** - Margaret Atwood
 * [ ] **Enlightenment Now** - Steven Pinker
+* [ ] **The Alchemist** - Paulo Coelho
 
