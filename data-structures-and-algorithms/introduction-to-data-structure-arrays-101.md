@@ -577,5 +577,25 @@ class Solution:
             i += 1
 ```
 
+## Search in an Array
+
+* searching is the most important operation
+* the speed of searching for an element in a data structure helps programmers make design choices for their codebases
+* there are multiple ways to search an array
+* **searching** means to find an occurrence of a particular element in the array and return its position
+  * might need to search an array to find out whether or not an element is present in an array
+  * might want to search an array to find which index to insert a new element at
+* if we know the index in the array that might have the element we are looking for, the search becomes a constant time operation, **O\(1\)**
+  * we go to the given index and check whether or not the element is there
+
+### Linear Search
+
+* if the index is not known, we can check every element in the array
+  * we continue checking elements until we find the element we're looking for or we reach the end of the array
+* **linear search algorithm:** technique for finding an element by checking through all elements one by one
+  * in the worst case, a linear search checks the entire array
+  * the time complexity for a linear search is **O\(n\)**
+* \*\*\*\*
+
 
 
