@@ -595,7 +595,26 @@ class Solution:
 * **linear search algorithm:** technique for finding an element by checking through all elements one by one
   * in the worst case, a linear search checks the entire array
   * the time complexity for a linear search is **O\(n\)**
-* \*\*\*\*
+
+Example: the linear search algorithm in action, with all the edge cases handled properly.
+
+```text
+def linear_search(my_list, val):
+    # Check for edge cases. Is the array null or empty?
+    # if it is, the we return false because the element we're
+    # searching for couldn't possibly be in it
+    if not my_list:
+        return False
+    
+    # Carry out the linear search by checking each element,
+    # starting from the first one.
+    for i in range(len(my_list)):
+        if my_list[i] == val:
+            return True
+    
+    # We didn't find the element in the array.
+    return False
+```
 
 
 
