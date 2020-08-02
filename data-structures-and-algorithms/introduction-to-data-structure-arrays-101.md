@@ -218,6 +218,12 @@ class Solution:
         return sorted(final)
 ```
 
+```text
+class Solution:
+    def sortedSquares(self, A: List[int]) -> List[int]:
+        return sorted(x*x for x in A)
+```
+
 
 
 ## [Inserting Items Into an Array](https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into-an-array/3243/)
@@ -616,5 +622,162 @@ def linear_search(my_list, val):
     return False
 ```
 
+* this is the function we can call to see whether or not an element is in an array
+* we take care of the edge cases before proceeding with the actual search
+  * we don't check the rest of the elements once we found the element we were looking for
 
+### Binary Search
+
+* if the elements in the array are in sorted order, we can use binary search
+* **binary search:** where we repeatedly look at the middle element in the array and determine whether the element we are looking for is to the left or to the right
+  * each time we do this, we halve the number of elements we need to search, making binary search a lot faster than linear search
+* only works if the data is sorted
+* if we are doing a single search, it is faster to do a linear search
+  * it takes longer to sort than to linear search
+* if we are performing a lot of searches, it is worth sorting the data first so we can use binary search for repeated searches
+
+### Problem: Check if N and Its Double Exist
+
+Given an array `arr` of integers, check if there exists two integers `N` and `M` such that `N` is the double of `M` \( i.e. `N = 2 * M`\).
+
+More formally check if there exists two indices `i` and `j` such that :
+
+* `i != j`
+* `0 <= i, j < arr.length`
+* `arr[i] == 2 * arr[j]`
+
+**Example 1:**
+
+```text
+Input: arr = [10,2,5,3]
+Output: true
+Explanation: N = 10 is the double of M = 5,that is, 10 = 2 * 5.
+```
+
+**Example 2:**
+
+```text
+Input: arr = [7,1,14,11]
+Output: true
+Explanation: N = 14 is the double of M = 7,that is, 14 = 2 * 7.
+```
+
+**Example 3:**
+
+```text
+Input: arr = [3,1,7,11]
+Output: false
+Explanation: In this case does not exist N and M, such that N = 2 * M.
+```
+
+**Constraints:**
+
+* `2 <= arr.length <= 500`
+* `-10^3 <= arr[i] <= 10^3`
+
+```text
+class Solution:
+    def checkIfExist(self, arr: List[int]) -> bool:
+        for i in range(len(arr)):
+            # check if double exists in all other elements
+            if arr[i] * 2 in (arr[:i] + arr[i+1:]):
+                return True
+            # check if half exists in all other elements if number is even
+            elif arr[i] % 2 == 0:
+                if arr[i] / 2 in (arr[:i] + arr[i+1:]):
+                    return True
+        return False
+```
+
+### 
+
+### Problem: Valid Mountain Array
+
+Given an array `A` of integers, return `true` if and only if it is a _valid mountain array_.
+
+Recall that A is a mountain array if and only if:
+
+* `A.length >= 3`
+* There exists some `i` with `0 < i < A.length - 1` such that:
+  * `A[0] < A[1] < ... A[i-1] < A[i]`
+  * `A[i] > A[i+1] > ... > A[A.length - 1]`
+
+![](https://assets.leetcode.com/uploads/2019/10/20/hint_valid_mountain_array.png)
+
+**Example 1:**
+
+```text
+Input: [2,1]
+Output: false
+```
+
+**Example 2:**
+
+```text
+Input: [3,5,5]
+Output: false
+```
+
+**Example 3:**
+
+```text
+Input: [0,3,2,1]
+Output: true
+```
+
+**Note:**
+
+1. `0 <= A.length <= 10000`
+2. `0 <= A[i] <= 10000` 
+
+```text
+class Solution:
+    def validMountainArray(self, A: List[int]) -> bool:
+        if len(A) < 3:
+            return False
+        dec = False
+
+        # check that the array starts by increasing
+        if A[0] > A[1]:
+            return False
+
+        for i in range(len(A) - 1):
+            # not strictly increasing
+            if A[i] == A[i+1]:
+                return False
+            # initialize inc bool to be True
+            elif A[i] < A[i+1] and dec:
+                return False
+            # if the array starts decreasing
+            elif A[i] > A[i+1]:
+                dec = True
+            # if the array has already decreased, it shouldn't increase again
+            elif dec and A[i] < A[i+1]:
+                return False
+
+        if not dec:
+            return False
+        return True
+```
+
+```text
+class Solution:
+    def validMountainArray(self, A: List[int]) -> bool:
+        n = len(A)
+        i = 0
+        
+        #walk up
+        while i+1 < n and A[i] < A[i+1]:
+            i += 1
+            
+        # peak can't be first or last
+        if i == 0 or i == n-1:
+            return False
+            
+        # walk down
+        while i+1 < n and A[i] > A[i+1]:
+            i += 1
+        
+        return i == n-1
+```
 
