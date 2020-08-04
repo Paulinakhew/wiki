@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [About Me](about-me/README.md)
+  * [Personality Type](about-me/personality-type.md)
 * [Books](books/README.md)
   * [Books to Read](books/books-to-read.md)
   * [2019](books/2019.md)
