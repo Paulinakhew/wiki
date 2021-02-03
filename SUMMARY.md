@@ -14,6 +14,7 @@
   * [TED Talks](favourites/ted-talks.md)
   * [Quotes](favourites/quotes.md)
 * [Coding](coding/README.md)
+  * [OAuth](coding/oauth.md)
   * [Languages](coding/languages/README.md)
     * [C++](coding/languages/c++.md)
     * [Python](coding/languages/python.md)
