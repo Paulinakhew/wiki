@@ -17,6 +17,8 @@
   * [Object-Oriented Design](coding/object-oriented-design.md)
   * [OAuth](coding/oauth.md)
   * [Languages](coding/languages/README.md)
+    * [Ruby](coding/languages/ruby/README.md)
+      * [Learn Ruby from Scratch](coding/languages/ruby/learn-ruby-from-scratch.md)
     * [C++](coding/languages/c++.md)
     * [Python](coding/languages/python.md)
   * [Hackathons](coding/hackathons.md)
