@@ -2,8 +2,8 @@
 
 These notes are taken from [this](https://www.educative.io/courses/learn-ruby-from-scratch) Educative online course, which I audited for free.
 
-## Why should you learn Ruby?
-### Programming is Creation
+# 1. Why should you learn Ruby?
+## Programming is Creation
 Motivate yourself to bring your code to life!
 - when you run a program, a universe is created where things come to life and interact with each other
 - as the creator, you define the rules
@@ -13,6 +13,7 @@ Motivate yourself to bring your code to life!
     - users can follow each other
     - each time new users are created in your application, users have the ability to tweet and follow each other
 
+# 2. Variables
 ## What are Variables?
 This lesson gives an insight into variables and variable assignment.
 
@@ -115,9 +116,138 @@ puts number
 ## Types of Variables and their Usage
 Get to know various kinds of variables in Ruby. Moreover, learn how and when to use them.
 
+### Definition and Usage
 |   | Naming  | Scope  | Initialization  |
 |---|---|---|---|
 | Global Variables  | Global variables start with a `$` sign.  |  Their scope is global which means that they can be accessed from anywhere in a program. |  There’s no need to initilize. Uninitialized global variables have the value nil. |
 |  Local Variables | Local variables begin with a lowercase letter or underscore(`_`).	  | The scope of a local variable ranges from class, module, def, or from a block’s opening brace to its close brace {}, i.e within its block of initialization.  |  No need to initialize. An uninitialized local variable is interpreted as methods with no arguments. |
 | Instance Variables  |  They start with an `@` sign. | Their scope is limited to one instance of a class.  |   There’s no need to initilize. Uninitialized instance variables have the value nil. |
 |  Class Variables |  Class variables start with an `@@` sign. |  Their scope is limited to the class in which they are created. |  They need to be initialized beforehand, otherwise they’ll result in error. |
+
+### Examples
+#### Global Variables
+```ruby
+$global_var = "GLOBAL"  
+non_global_var = "NON-GLOBAL"
+ 
+def method1 
+  puts "Global variable is #$global_var"   
+end 
+
+def method2 
+  puts "Non-global variable is ", non_global_var    
+end 
+
+method1
+method2
+```
+
+- `$global_var` is a global variable since it is preceded by a `$` sign
+    - it can be accessed from anywhere in the program
+- `non_global_var` is a simple variable
+    - cannot be accessed from inside the `method2` so it gives an "undefined local variable or method" error
+
+Output
+```
+Global variable is GLOBAL
+
+main.rb:9:in `method2': undefined local variable or method `non_global_var' for main:Object (NameError)
+	from main.rb:13:in `<main>'
+```
+
+#### Local Variables
+```ruby
+var = "Hello World"
+def foo 
+  var = 1.5
+  puts "Value of var in foo : ", var
+end 
+
+foo
+puts "Value of var outside 'foo' method:", var
+```
+- there are two variables named `var` with different scopes
+- the `var` inside the method has the local scope
+
+Output
+```
+Value of var in foo : 
+1.5
+Value of var outside 'foo' method:
+Hello World
+```
+
+#### Instance Variables
+```ruby
+class Employee   
+   def initialize(name)   
+      @employee_name = name     
+   end   
+  
+   def print()   
+     puts "Employee name: #@employee_name"   
+   end   
+end   
+
+# Create Objects   
+e1 = Employee.new("Emma")   
+e2 = Employee.new("David") 
+e3 = Employee.new("Harris") 
+  
+# Call Methods   
+e1.print()   
+e2.print()   
+e3.print()
+```
+
+- an instance variable starts with an `@` sign
+- it belongs to only one instance of the class
+- an uninitialized instance variable will have a `nil` value
+
+Output
+```
+Employee name: Emma
+Employee name: David
+Employee name: Harris
+```
+
+#### Class Variables
+```ruby
+class Employee   
+   @@no_of_employees = 0   
+   def initialize(name)   
+      @employee_name = name   
+      @@no_of_employees += 1   
+   end   
+  
+   def total_no_of_employees()   
+     puts "Total number of employees: #@@no_of_employees"   
+   end   
+end   
+
+# Create Objects   
+e1 = Employee.new("Emma")   
+e2 = Employee.new("David") 
+e3 = Employee.new("Harris") 
+  
+# Call Methods   
+e1.total_no_of_employees()   
+e2.total_no_of_employees()   
+e3.total_no_of_employees()  
+```
+
+- a class variable starts with a `@@` sign
+- it should be initialized before use
+- it belongs to the whole class and can be accessed from anywhere in the class
+- a class variable is shared by all the descendants of the class
+    - its value will change for every instance of the class
+
+Output
+```
+Total number of employees: 3
+Total number of employees: 3
+Total number of employees: 3
+```
+
+## Quick Quiz on Variables!
+The quiz is located [here](https://www.educative.io/courses/learn-ruby-from-scratch/gx8NGOAZnqr).
