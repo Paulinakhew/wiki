@@ -21,7 +21,7 @@
 
 #### An apt example
 
-![Installing maria using Ubuntu.](../../../.gitbook/assets/screen-shot-2020-07-21-at-11.11.19-am.png)
+![Installing maria using Ubuntu.](../../../.gitbook/assets/screen-shot-2020-07-21-at-11.11.19-am%20%281%29.png)
 
 * this is a simple apt update
   * apt update knowledge about packages, install it, and it works
