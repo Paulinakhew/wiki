@@ -304,7 +304,7 @@ This lesson goes through the types of number evaluations in Ruby.
 * you can use an underscore `-` to separate thousands places e.g. `1_234.56` which is equal to `1234.56` 
 * a number is defined by a series of digits, using a dot as a decimal mark, and optionally an underscore as a thousands separator
 
-### Kinds of Numbers
+#### Kinds of Numbers
 
 * there are different kinds of numbers
   * integer numbers aka "integers"
@@ -333,5 +333,82 @@ This lesson goes through the types of number evaluations in Ruby.
 => 1
 ```
 
+* decimal places will be cut off
+  * use floating point \(decimal\) numbers when doing divisions
 
+```ruby
+> 3.0 / 2
+=> 1.5
+> 3 / 2.0
+=> 1.5
+```
+
+#### Further Readings
+
+* look through the [documentation for integer numbers](https://ruby-doc.org/core-2.2.2/Integer.html) 
+
+### Exercise 1: Playing with Numbers
+
+#### Problem Statement
+
+In the exercise below, calculate:
+
+* how many hours are in a year?
+* how many minutes are in a decade?
+* how to convert an age given in years seconds
+
+#### Try it yourself
+
+```ruby
+def playing_with_numbers(hours_in_year, minutes_in_decade, age)
+  hours_in_year = 24 * 365
+  minutes_in_decade = 60 * hours_in_year * 10
+  age_in_seconds = age * hours_in_year * 60 * 60
+
+
+  return hours_in_year, minutes_in_decade, age_in_seconds 
+end
+```
+
+3 of 3 Tests Passed
+
+### Exercise 2: Guess the Type?
+
+The quiz is located [here](https://www.educative.io/courses/learn-ruby-from-scratch/JP7jQlNG962).
+
+### Exercise 3: Finding Modulo
+
+#### Problem Statement
+
+Find out what "modulo" means by asking Google and then calculate the modulo of two numbers given as an input.
+
+#### Try it yourself
+
+```ruby
+def calculate_mod(num1, num2)
+  result = num1 % num2
+  
+  return result
+end
+```
+
+5 of 5 Tests Passed
+
+### Exercise 4: Even or Odd?
+
+Check whether a number is even or odd.
+
+#### Problem Statement
+
+Use a method from the [documentation](http://ruby-doc.org/core-2.2.2/Integer.html#method-i-odd-3F) to find out if given numbers are odd or even.
+
+```ruby
+def even_or_odd(num)
+  result = num.even? ? "even" : "odd"
+  
+  return result
+end
+```
+
+5 of 5 Tests Passed
 
