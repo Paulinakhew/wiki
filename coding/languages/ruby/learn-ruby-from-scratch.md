@@ -412,3 +412,69 @@ end
 
 5 of 5 Tests Passed
 
+## 4. Built-in Classes: Strings
+
+### Working with Strings
+
+This lesson will teach you how you can operate on strings in Ruby.
+
+#### 🔤 A String, in programming languages, is text.
+
+* a String is an object that represents a specific
+* the most simple and common way to create Strings is to enclose some characters in quotes
+  * you can use single or double qoutes
+
+```ruby
+"This is a string"
+'This is another one'
+```
+
+#### Things you can do with Strings
+
+* you can stick them together by using `+` 
+  * this is called [concatenation](https://www.wikiwand.com/en/Concatenation)
+
+```ruby
+> "snow" + "ball"
+=> "snowball"
+
+> "hi" + "hi" + "hi"
+=> "hihihi"
+```
+
+* you can replicate the last operation using `*` 
+
+```text
+> "hi" * 3
+=> "hihihi"
+```
+
+* multiplying a String by a number in Ruby means repeating the String as many times
+
+```text
+> "1" + "1" + "1"
+=> "111"
+
+> "1" * 3
+=> "111"
+```
+
+* Ruby behaves the same for Strings that contain nothing but numbers
+* some other String methods:
+
+```text
+> "hello".upcase
+=> "HELLO"
+
+> "hello".capitalize
+=> "Hello"
+
+> "hello".length
+=> 5
+
+> "hello".reverse
+=> "olleh"
+```
+
+* the last
+
